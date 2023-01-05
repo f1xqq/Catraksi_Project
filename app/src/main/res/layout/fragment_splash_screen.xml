@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenFragment">
+
+    <ImageView
+        android:id="@+id/gambar_logo"
+        android:layout_width="348dp"
+        android:layout_height="348dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="31dp"
+        android:src="@drawable/logo_aplikasi" />
+
+</FrameLayout>
