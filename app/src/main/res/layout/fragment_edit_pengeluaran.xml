@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditPengeluaranFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:background="@drawable/on_boarding_button"
+        android:elevation="10dp">
+
+        <Button
+            android:id="@+id/back_edit_pengeluaran"
+            android:layout_width="10.31dp"
+            android:layout_height="18dp"
+            android:background="@drawable/back_putih"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="25dp"
+            android:text="Tambah Transaksi"
+            android:textColor="@color/PUTIH"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="9.69dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="401dp"
+        android:layout_height="362dp"
+        android:background="@drawable/bg_tentang"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="369dp"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/button_form">
+
+            <Button
+                android:id="@+id/edit_tambah_pengeluaran"
+                android:layout_width="185dp"
+                android:layout_height="39dp"
+                android:background="@drawable/button_pengeluaran"
+                android:text="Pengeluaran"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins"
+                android:textColor="#F4F8F1"/>
+
+            <Button
+                android:id="@+id/edit_tambah_pemasukan"
+                android:layout_width="185dp"
+                android:layout_height="39dp"
+                android:background=""
+                android:text="Pemasukan"
+                android:textSize="14dp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/DARK_ORANGE"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="257dp"
+            android:orientation="vertical"
+            android:layout_marginTop="85dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="326.04dp"
+                android:layout_height="21dp"
+                android:text="Tanggal"
+                android:textSize="9sp"
+                android:letterSpacing="0.1"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_tanggal"
+                android:layout_width="360dp"
+                android:layout_height="32dp"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="11dp"
+                android:inputType="date"
+                android:background="@drawable/form_transaksi"/>
+
+            <TextView
+                android:layout_width="326.04dp"
+                android:layout_height="21dp"
+                android:text="Kategori"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppins"
+                android:letterSpacing="0.1"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/edit_kategori"
+                android:layout_width="360dp"
+                android:layout_height="32dp"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="11dp"
+                android:background="@drawable/form_transaksi"/>
+
+            <TextView
+                android:layout_width="326.04dp"
+                android:layout_height="21dp"
+                android:text="Jumlah"
+                android:textSize="9sp"
+                android:letterSpacing="0.1"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/edit_Jumlah"
+                android:layout_width="360dp"
+                android:layout_height="32dp"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="11dp"
+                android:inputType="number"
+                android:background="@drawable/form_transaksi"/>
+
+            <TextView
+                android:layout_width="326.04dp"
+                android:layout_height="21dp"
+                android:text="Keterangan"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppins"
+                android:letterSpacing="0.1"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/edit_keterangan"
+                android:layout_width="360dp"
+                android:layout_height="32dp"
+                android:textColor="@color/black"
+                android:textSize="9sp"
+                android:fontFamily="@font/poppins"
+                android:paddingLeft="11dp"
+                android:background="@drawable/form_transaksi"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="33dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/edit_simpan_data_pengeluaran"
+            android:layout_width="186dp"
+            android:layout_height="44dp"
+            android:text="Simpan"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:background="@drawable/on_boarding_button"
+            android:textColor="@color/PUTIH"
+            android:elevation="10dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
