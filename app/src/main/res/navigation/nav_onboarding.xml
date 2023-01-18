@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_onboarding"
+    app:startDestination="@id/splashScreenFragment">
+
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.catraksi_project.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment"
+            app:popUpTo="@id/loginAplikasiActivity"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_loginAplikasiActivity"
+            app:destination="@id/loginAplikasiActivity"
+            app:popUpTo="@id/splashScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.catraksi_project.vPagerFragment.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_loginAplikasiActivity"
+            app:destination="@id/loginAplikasiActivity"
+            app:popUpTo="@id/viewPagerFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/loginAplikasiActivity"
+        android:name="com.example.catraksi_project.LoginAplikasiActivity"
+        android:label="activity_login_aplikasi"
+        tools:layout="@layout/activity_login_aplikasi" />
+</navigation>

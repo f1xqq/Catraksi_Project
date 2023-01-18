@@ -64,7 +64,6 @@
                 android:id="@+id/tambah_pemasukan"
                 android:layout_width="185dp"
                 android:layout_height="39dp"
-                android:background=""
                 android:text="Pemasukan"
                 android:textSize="14dp"
                 android:textAllCaps="false"
