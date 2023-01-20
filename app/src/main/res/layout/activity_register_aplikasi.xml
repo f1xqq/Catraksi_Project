@@ -17,6 +17,7 @@
             android:id="@+id/back_login"
             android:layout_width="10.31dp"
             android:layout_height="18dp"
+            android:onClick="keLogin"
             android:background="@drawable/back"
             android:layout_marginTop="24dp"
             android:layout_marginLeft="30dp"/>
@@ -67,7 +68,7 @@
                 android:layout_marginLeft="81dp" />
 
             <EditText
-                android:id="@+id/nama_pengguna"
+                android:id="@+id/nama_pengguna_register"
                 android:layout_width="265dp"
                 android:layout_height="32dp"
                 android:textColor="@color/black"
@@ -89,7 +90,7 @@
                 android:layout_marginLeft="81dp" />
 
             <EditText
-                android:id="@+id/kata_sandi"
+                android:id="@+id/kata_sandi_register"
                 android:layout_width="265dp"
                 android:layout_height="32dp"
                 android:textColor="@color/black"
@@ -112,7 +113,7 @@
                 android:layout_marginLeft="81dp" />
 
             <EditText
-                android:id="@+id/email"
+                android:id="@+id/email_register"
                 android:layout_width="265dp"
                 android:layout_height="32dp"
                 android:textColor="@color/black"

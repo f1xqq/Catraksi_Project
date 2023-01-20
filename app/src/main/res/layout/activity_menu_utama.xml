@@ -13,6 +13,7 @@
         android:layout_height="105dp">
         
         <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_atas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/ORANGE">
@@ -54,6 +55,7 @@
                     android:layout_width="4dp"
                     android:layout_height="16dp"
                     android:background="@drawable/more_icon"
+                    android:onClick="keMenuMore"
                     android:layout_marginTop="15dp"
                     android:layout_marginLeft="190dp"/>
 

@@ -59,7 +59,7 @@
                 android:layout_marginLeft="81dp" />
 
             <EditText
-                android:id="@+id/nama_pengguna"
+                android:id="@+id/nama_pengguna_login"
                 android:layout_width="265dp"
                 android:layout_height="32dp"
                 android:textColor="@color/black"
@@ -67,6 +67,8 @@
                 android:fontFamily="@font/poppins"
                 android:paddingLeft="11dp"
                 android:layout_marginLeft="73dp"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no"
                 android:background="@drawable/kolom_log_reg"/>
 
             <TextView
@@ -81,7 +83,7 @@
                 android:layout_marginLeft="81dp" />
 
             <EditText
-                android:id="@+id/kata_sandi"
+                android:id="@+id/kata_sandi_login"
                 android:layout_width="265dp"
                 android:layout_height="32dp"
                 android:textColor="@color/black"
@@ -90,6 +92,7 @@
                 android:paddingLeft="11dp"
                 android:layout_marginLeft="73dp"
                 android:inputType="textPassword"
+                android:importantForAutofill="no"
                 android:background="@drawable/kolom_log_reg"/>
 
         </LinearLayout>
@@ -114,6 +117,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:fontFamily="@font/poppins_bold"
+                android:onClick="keRegister"
                 android:text=" Yuk daftar"
                 android:letterSpacing="0.1"
                 android:textColor="@color/DARK_ORANGE"
